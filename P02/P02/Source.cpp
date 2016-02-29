@@ -130,23 +130,17 @@ void renderScene(void) {
 }*/
 void rotate(int key, int c1, int c2) {
 	switch (key) {
-	case GLUT_KEY_UP :
+	case GLUT_KEY_RIGHT:
 		yAngle -= 30;
 		break;
-	case GLUT_KEY_DOWN:
+	case GLUT_KEY_LEFT:
 		yAngle += 30;
 		break;
-	case('w') :
+	case GLUT_KEY_DOWN :
 		xAngle += 30;
 		break;
-	case('s') :
+	case GLUT_KEY_UP :
 		xAngle -= 30;
-		break;
-	case('a') :
-		zAngle += 30;
-		break;
-	case('d') :
-		zAngle -= 30;
 		break;
 	}
 	glutPostRedisplay();
